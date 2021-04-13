@@ -14,16 +14,17 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
 import com.amazonaws.services.dynamodbv2.document.DynamoDB;
 import com.amazonaws.services.dynamodbv2.document.Table;
-
+import static com.lucasrmagalhaes.herosapi.constants.HeroConstant.REGION_DYNAMO;
+import static com.lucasrmagalhaes.herosapi.constants.HeroConstant.ENDPOINT_DYNAMO;
 import java.security.Key;
 import java.util.Arrays;
 
 @Configuration
 @EnableDynamoDBRepositories
 public class HeroesTable {
-    public static void main (String [] args) throws Exception(
+    public static void main (String [] args) throws Exception {
             AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
-                    .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration())
+                    .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration(ENDPOINT_DYNAMO, REGION_DYNAMO))
                     .build();
 
             DynamoDB dynamoDB = new DynamoDB(client);
@@ -41,5 +42,5 @@ public class HeroesTable {
             catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-}
+    }
 }
