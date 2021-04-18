@@ -1,6 +1,6 @@
-package com.lucasrmagalhaes.herosapi.repository;
+package com.lucasrmagalhaes.heroes.repository;
 
-import com.lucasrmagalhaes.herosapi.document.Heroes;
+import com.lucasrmagalhaes.heroes.document.Heroes;
 import org.socialsignin.spring.data.dynamodb.repository.EnableScan;
 import org.springframework.data.repository.CrudRepository;
 

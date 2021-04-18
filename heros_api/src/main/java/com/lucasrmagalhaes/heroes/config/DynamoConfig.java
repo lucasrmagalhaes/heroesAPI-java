@@ -1,4 +1,4 @@
-package com.lucasrmagalhaes.herosapi.config;
+package com.lucasrmagalhaes.heroes.config;
 
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.BasicAWSCredentials;

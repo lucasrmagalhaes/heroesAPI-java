@@ -1,4 +1,4 @@
-package com.lucasrmagalhaes.herosapi.document;
+package com.lucasrmagalhaes.heroes.document;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import org.springframework.data.annotation.Id;

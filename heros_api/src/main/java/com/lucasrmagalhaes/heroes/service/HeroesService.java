@@ -1,7 +1,7 @@
-package com.lucasrmagalhaes.herosapi.service;
+package com.lucasrmagalhaes.heroes.service;
 
-import com.lucasrmagalhaes.herosapi.document.Heroes;
-import com.lucasrmagalhaes.herosapi.repository.HeroesRepository;
+import com.lucasrmagalhaes.heroes.document.Heroes;
+import com.lucasrmagalhaes.heroes.repository.HeroesRepository;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

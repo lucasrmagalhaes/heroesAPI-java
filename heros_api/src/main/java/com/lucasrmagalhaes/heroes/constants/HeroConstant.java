@@ -1,4 +1,4 @@
-package com.lucasrmagalhaes.herosapi.constants;
+package com.lucasrmagalhaes.heroes.constants;
 
 public class HeroConstant {
     public static final String HEROES_ENDPOINT_LOCAL = "/heroes";
